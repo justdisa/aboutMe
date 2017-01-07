@@ -70,3 +70,26 @@ if (answer5 === 'Y' || answer5 === 'YES') {
 } else {
   alert('No matter how you answer, here, it\'s going to be right.');
 }
+
+var index;
+for (index = 0; index < 4; index++) {
+  var answer6 = prompt('This one\'s a little different. This time I need you to answer with a number. You get four guesses. How many pets do you think I have?');
+  if (!isNaN(answer6)) {
+    if (answer6 > 0) {
+      alert('Your guess is too high!');
+    }
+    else if (answer6 < 0) {
+      alert('Your guess is too low!');
+    }
+    else {
+      alert('You are correct! I have no pets.');
+      break;
+    }
+  } else {
+    alert('I\'m sorry. That\'s not a number.');
+  }
+}
+//This should be the same as the previous code but without hints//
+/*var answer7 = prompt('This one is different, too. You get six guesses. Name a state I\'ve lived in other than Washington.');*/
+
+//Before everything, define array
