@@ -43,6 +43,20 @@ p {
   text-align: justify;
 }
 
+a:link {
+  color: tomato;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+ol, ul, li {
+  color: tomato;
+  text-align: left;
+  text-decoration: none;
+}
+
 .spacer {
 
   max-width: 75%;
