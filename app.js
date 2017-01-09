@@ -147,11 +147,11 @@ function questionEight() {
   }
 }
 
-questionOne;
-questionTwo;
-questionThree;
-questionFour;
-questionFive;
-questionSix;
-questionSeven;
-questionEight;
+questionOne();
+questionTwo();
+questionThree();
+questionFour();
+questionFive();
+questionSix();
+questionSeven();
+questionEight();
