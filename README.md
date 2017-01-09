@@ -1,3 +1,3 @@
 # aboutMe
 This is the first 201 project for week 1.
-Contributers: Disa & Alex
+Pair programming 1/5/2017 contributors: Disa & Alex

@@ -1,7 +1,7 @@
 'use strict';
 
 var corAns = [];
-//Part of what will eventually be my arrays.
+//Part of what will eventually be my complicated arrays.
 // var questions = [
 //   1,
 //   2,
@@ -146,3 +146,12 @@ function questionEight() {
     alert('I\'m sorry,' + user + '. You answered ' + corAns.length + ' out of 7 questions correctly. Better luck next time.');
   }
 }
+
+questionOne;
+questionTwo;
+questionThree;
+questionFour;
+questionFive;
+questionSix;
+questionSeven;
+questionEight;
