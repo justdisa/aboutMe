@@ -111,6 +111,7 @@ for (index = 0; index < 6; index++) {
     alert('Nope. Not that one.');
   }
 }
+alert ('The only other state I\'ve lived in is Oregon.');
 
 alert('All done! You answered ' + corAns.length + ' out of 7 questions correctly! Thanks for playing.');
 
