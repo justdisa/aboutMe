@@ -48,17 +48,13 @@ a:link {
 }
 
 a:visited {
-  color: darkslateblue;
+  text-decoration: none;
 }
-
-a:hover, a:active {
-  color: darkmagenta;
-}
-
 
 ol, ul, li {
   color: tomato;
   text-align: left;
+  text-decoration: none;
 }
 
 .spacer {
