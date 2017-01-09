@@ -113,6 +113,14 @@ for (index = 0; index < 6; index++) {
 }
 alert ('The only other state I\'ve lived in is Oregon.');
 
-alert('All done! You answered ' + corAns.length + ' out of 7 questions correctly! Thanks for playing.');
+if (corAns.length = 7) {
+  alert('Great job,' + user + '! You answered all ' + corAns.length + ' questions correctly! Thanks for playing.');
+}
+else if (corAns.length > 4 && corAns.length < 7) {
+  alert('Nicely done, ' + user + '. You answered ' + corAns.length + ' out of 7 questions correctly. Thanks for playing.');
+}
+else {
+  alert('I\'m sorry,' + user + '. You answered ' + corAns.length + ' out of 7 questions correctly. Better luck next time.');
+}
 
 //This branch is to fulfill the requirements for the "Code: Extend your 'About Me' and guessing game" which was due on January 5th//

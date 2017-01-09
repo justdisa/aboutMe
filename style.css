@@ -43,6 +43,24 @@ p {
   text-align: justify;
 }
 
+a:link {
+  color: tomato;
+}
+
+a:visited {
+  color: darkslateblue;
+}
+
+a:hover, a:active {
+  color: darkmagenta;
+}
+
+
+ol, ul, li {
+  color: tomato;
+  text-align: left;
+}
+
 .spacer {
 
   max-width: 75%;
