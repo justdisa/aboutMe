@@ -1,5 +1,7 @@
 'use strict';
 
+var corAns = [];
+
 var user = prompt('Hey, there. My name is Disa. It rhymes with Lisa. What\'s your name?');
 console.log('The user\'s name is: ' + user + '.');
 
@@ -21,6 +23,7 @@ console.log('The user answered: ' + answer1);
 
 if (answer1 === 'Y' || answer1 === 'YES') {
   alert('That\'s right! I fired a gun for the first time before I was two years old.');
+  corAns.push(answer1);
 } else if (answer1 === 'N' || answer1 === 'NO'){
   alert('Ah, no, ' + user + '. I\'m not into guns, now, but I got my own .22 rifle when I was eight, and passed my hunter\'s safety exam when I was eleven. I was the smallest kid in the class, and the teacher had to waive the shotgun test because I couldn\'t lift the shotgun.');
 } else {
@@ -32,6 +35,7 @@ console.log('The user answered: ' + answer2);
 
 if (answer2 === 'Y' || answer2 === 'YES') {
   alert('I surely have! I had a Honda 50 Minibike when I was a kid. Wish I\'d kept that thing. People collect them, now.');
+  corAns.push(answer2);
 } else if (answer2 === 'N' || answer2 === 'NO'){
   alert('Afraid you missed this one, ' + user + '. Not only have I been on a motorcycle, but the fine surgeons at Harborview put my pelvis back together with a six inch screw after I hit the pavement at sixty miles per hour. I am titanium!');
 } else {
@@ -45,6 +49,7 @@ if (answer3 === 'Y' || answer3 === 'YES') {
   alert('Who me? It\'s the absolute truth. I was singing a gospel duet at a public concert celebrating Martin Luther King Junior Day, and the Governor was in attendance. The guy I was singing with knew him pretty well. Without warning, he stuck the mic in the Governor\'s face. He sang.');
 } else if (answer === 'N' || answer === 'NO') {
   alert('You\'re right, ' + user + '! Governor Locke has a surprisingly nice tenor.');
+  corAns.push(answer3);
 } else {
   alert('It\'s true. My life is strange enough that I don\'t feel a need to make stuff up.');
 }
@@ -56,6 +61,7 @@ if (answer4 === 'Y' || answer4 === 'YES') {
   alert('Nope! I\'ve gotten on a plane before, but the plane I was on landed without me. I\'d already jumped out of it.');
 } else if (answer === 'N' || answer === 'NO') {
   alert('Well, you\'re half right,' + user + '. I\'ve only been in a plane once. I got in. We took off. Then somewhere a couple miles in the air, I jumped out of it and it landed without me.');
+  corAns.push(answer4);
 } else {
   alert('I have flown in a plane. Someday, I hope to land in one.');
 }
@@ -65,10 +71,13 @@ console.log('The user answered: ' + answer5);
 
 if (answer5 === 'Y' || answer5 === 'YES') {
   alert('You\'re right. I took a computer class in 1981 and I loved it, but I didn\'t have a computer at home. Besides, girls weren\'t supposed to like computers...right? That\'s what the boys in the computer lab told me. That derailed me for some time, but here I am. Funny how these things happen, isn\'t it, ' + user + '?');
+  corAns.push(answer5);
 } else if (answer === 'N' || answer === 'NO') {
   alert('You\'re right. I took a computer class in 1981 and I loved it, but I didn\'t have a computer at home. Besides, girls weren\'t supposed to like computers...right? That\'s what the boys in the computer lab told me. I didn\'t try again for some time, but here I am. Funny how these things happen, isn\'t it, ' + user + '?');
+  corAns.push(answer5);
 } else {
   alert('No matter how you answer, here, it\'s going to be right.');
+  corAns.push(answer5);
 }
 
 var index;
@@ -84,6 +93,7 @@ for (index = 0; index < 4; index++) {
     }
     else {
       alert('You are correct! I have no pets.');
+      corAns.push(answer6);
       break;
     }
   } else {
@@ -95,8 +105,11 @@ for (index = 0; index < 6; index++) {
   var answer7 = prompt('Last question! You get six guesses. What state have I lived in other than Washington?').toUpperCase();
   if (answer7 === 'OREGON' || answer7 === OR) {
     alert ('That\s the one!');
+    corAns.push(answer7);
     break;
   } else {
     alert('Nope. Not that one.');
   }
 }
+
+alert('All done! You answered ' + corAns.length + ' out of 7 questions correctly! Thanks for playing.');
