@@ -73,7 +73,7 @@ if (answer5 === 'Y' || answer5 === 'YES') {
 
 var index;
 for (index = 0; index < 4; index++) {
-  var answer6 = prompt('This one\'s a little different. This time I need you to answer with a number. You get four guesses. How many pets do you think I have?').toUpperCase();
+  var answer6 = prompt('This time I need you to answer with a number. You get four guesses. How many pets do you think I have?').toUpperCase();
   console.log('The user answered: ' + answer6);
   if (!isNaN(answer6)) {
     if (answer6 > 0) {
@@ -95,6 +95,7 @@ for (index = 0; index < 6; index++) {
   var answer7 = prompt('Last question! You get six guesses. What state have I lived in other than Washington?').toUpperCase();
   if (answer7 === 'OREGON' || answer7 === OR) {
     alert ('That\s the one!');
+    break;
   } else {
     alert('Nope. Not that one.');
   }
