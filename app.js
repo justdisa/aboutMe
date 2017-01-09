@@ -113,3 +113,5 @@ for (index = 0; index < 6; index++) {
 }
 
 alert('All done! You answered ' + corAns.length + ' out of 7 questions correctly! Thanks for playing.');
+
+//This branch is to fulfill the requirements for the "Code: Extend your 'About Me' and guessing game" which was due on January 5th//
