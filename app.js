@@ -12,10 +12,12 @@ var corAns = [];
 //   7
 // ];
 
-var user = prompt('Hey, there. My name is Disa. It rhymes with Lisa. What\'s your name?');
-console.log('The user\'s name is: ' + user + '.');
+function question () {
+  var user = prompt('Hey, there. My name is Disa. It rhymes with Lisa. What\'s your name?');
+  console.log('The user\'s name is: ' + user + '.');
 
-alert('Well, hello, ' + user + '. I\'m going to ask you some questions!');
+  alert('Well, hello, ' + user + '. I\'m going to ask you some questions!');
+}
 
 function questionOne() {
   var answer = prompt('They\'ll all be yes or no questions, so just answer with a Y or an N. You got that, right?').toUpperCase();
@@ -147,6 +149,7 @@ function questionEight() {
   }
 }
 
+question;
 questionOne;
 questionTwo;
 questionThree;
